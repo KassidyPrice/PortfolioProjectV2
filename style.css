@@ -1,0 +1,247 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Signika Negative', sans-serif;
+}
+img {
+  border: 0;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: -10;
+  background-color: #293851;
+  opacity: 0.5;
+}
+.title-container {
+  background-image: url(./assets/developing-life.jpg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  z-index: 0;
+}
+
+.title {
+  background-color: aliceblue;
+  opacity: 0.9;
+  color: #293851;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  top: 200px;
+  font-size: 70px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: -5px 10px 5px 4px #b59d98;
+}
+.arrow-down-container {
+  z-index: 1;
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+}
+.arrow-down {
+  font-size: 55px;
+  color: #293851;
+  opacity: 0.9;
+  border-radius: 50%;
+  box-shadow: -5px 10px 5px 4px #b59d98;
+}
+.about {
+  height: 100vh;
+  background-image: url(./assets/wooden-table.jpg);
+  position: relative;
+}
+.title-about {
+  color: #1e150f;
+  font-size: 70px;
+  position: absolute;
+  bottom: 30px;
+  right: 25px;
+  text-shadow: -2px 2px 10px #293851;
+  z-index: 2;
+}
+.arrow-right-container {
+  z-index: 1;
+  position: absolute;
+  right: 8px;
+  bottom: 40%;
+}
+.arrow-right {
+  font-size: 55px;
+  color: #1e150f;
+  opacity: 0.9;
+  border-radius: 50%;
+  box-shadow: -2px 2px 10px 2px #293851;
+}
+.skills {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #293851;
+  position: relative;
+  color: aliceblue;
+}
+.contact {
+  display: flex;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #293851;
+  position: relative;
+  color: aliceblue;
+}
+.portrait {
+  width: 250px;
+  box-shadow: -2px 2px 10px 2px #293851;
+}
+.landscape {
+  height: 250px;
+  box-shadow: -2px 2px 10px 2px #293851;
+}
+.img1 {
+  position: absolute;
+  top: 40px;
+  right: 55px;
+  transform: rotate(20deg);
+  z-index: 0;
+}
+.img2 {
+  position: absolute;
+  top: 90px;
+  right: 295px;
+  transform: rotate(350deg);
+  z-index: 1;
+}
+.img3 {
+  position: absolute;
+  top: 25px;
+  right: 550px;
+  transform: rotate(10deg);
+  z-index: 0;
+}
+.img4 {
+  position: absolute;
+  bottom: 10px;
+  left: 480px;
+  transform: rotate(25deg);
+  z-index: 1;
+}
+.img5 {
+  position: absolute;
+  bottom: 70px;
+  left: 20px;
+  transform: rotate(340deg);
+  z-index: 1;
+}
+.img6 {
+  position: absolute;
+  top: 30px;
+  left: 220px;
+  transform: rotate(350deg);
+  z-index: 1;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(1000px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideDown {
+  0% {
+    transform: translateY(-1000px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideLeft {
+  0% {
+    transform: translateX(1400px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes slideRight {
+  0% {
+    transform: translateX(-1400px);
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.transition-1 {
+  animation: slideRight 1.5s ease-out forwards;
+  -webkit-transition: 1.5s ease-out;
+  transition: 1.5s ease-out;
+}
+.transition-2 {
+  animation: slideUp 1.5s ease-out forwards;
+  -webkit-transition: 1.5 ease-out;
+  transition: 1.5 ease-out;
+}
+.transition-3 {
+  animation: slideLeft 1.5s ease-out forwards;
+  -webkit-transition: 1.5 ease-out;
+  transition: 1.5 ease-out;
+}
+.transition-4 {
+  animation: slideDown 1.5s ease-out forwards;
+  -webkit-transition: 1.5 ease-out;
+  transition: 1.5 ease-out;
+}
